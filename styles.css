@@ -1,0 +1,128 @@
+/* $Brightorange: hsl(31, 77%, 52%)
+$Darkcyan: hsl(184, 100%, 22%)
+$Verydarkcyan: hsl(179, 100%, 13%) */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    padding: 8% 20%;
+}
+
+body{
+    font-size: 15px;
+
+}
+
+.contents{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+    padding: 6%;
+    position: relative;
+    
+}
+
+.head{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 15%;
+}
+
+.c1,.c2,.c3{
+    width:33.3333333%;
+    height: 65vh;
+}
+
+.c1{
+    background-color: hsl(31, 77%, 52%);
+    float:left;
+    
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.c2{
+    background-color:hsl(184, 100%, 22%);
+    float:left;
+    
+    
+}
+
+.c3{
+    background-color: hsl(179, 100%, 13%);
+    float:left;
+    
+    
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/* images */
+.i1,.i2,.i3{
+    padding-bottom: 15%;
+}
+
+.i{
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom{
+    from{left: 0;}
+    to{left: 100;}
+}
+
+/* button */
+.learn{
+    background-color: hsl(0, 0%, 95%);
+    border: 0ch;
+    padding: 8px 20px 10px 20px;
+    border-radius: 28px;
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 10%;
+
+}
+
+
+.learn:hover{
+    background-color: black;
+}
+
+.c1 .learn{
+    color: hsl(31, 77%, 52%);
+}
+
+.c2 .learn{
+    color: hsl(184, 100%, 22%);
+}
+
+.c3 .learn{
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+ @media only screen and (max-width: 768px) {
+     .contents{
+        width: 100%;
+     }
+
+     .c1{
+         border-top-right-radius: 3%;
+         border-bottom-left-radius: 0;
+     }
+     .c3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3%;
+    }
+
+ }
