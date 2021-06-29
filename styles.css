@@ -124,5 +124,7 @@ body{
         border-top-right-radius: 0;
         border-bottom-left-radius: 3%;
     }
-
+    .main{
+        padding: 8% 10%;
+    }
  }
